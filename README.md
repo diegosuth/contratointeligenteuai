@@ -81,7 +81,7 @@ Ahora podemos empezar con la decriptación de nuestro archivo. Escribimos en la 
 ### Demostración de desbloqueo de la llave de ejemplo
 ![image](https://github.com/user-attachments/assets/5d43526c-e4a7-4713-90bf-3127c4cf58a7)
 
-Listo, ahora tienes tu llave privada en formato hexadecimal, la cual puedes guardar donde quieras, o usarla como te plazca. En caso de querer verificar funcionalidad del código este repositorio incluye una llave de ejemplo con contraseña *password123*
+Listo, ahora tienes tu llave privada en formato hexadecimal, la cual puedes guardar donde quieras, o usarla como te plazca. En caso de querer verificar la funcionalidad del código este repositorio incluye una llave de ejemplo con contraseña *password123*
 
 
 
