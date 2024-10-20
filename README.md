@@ -76,7 +76,7 @@ Una vez que tengamos todo listo:
 
 -**Carpeta con todos los ejecutables descargada**
 
-Ahora podemos empezar con la decriptación de nuestro archivo. Escribimos en la terminal de nuestro computador **python path/ubicacion main.py  path/ubicacion keyfile**. Si realizamos todo bien, nos pedirá la contraseña que colocamos al momento de crear el *keyfile* con clef (clef.exe newaccount).
+Ahora podemos empezar con la decriptación de nuestro archivo. Escribimos en la terminal de nuestro computador **python path/main.py  path/keyfile.json**. Si realizamos todo bien, nos pedirá la contraseña que colocamos al momento de crear el *keyfile* con clef (clef.exe newaccount).
 
 ### Demostración de desbloqueo de la llave de ejemplo
 ![image](https://github.com/user-attachments/assets/5d43526c-e4a7-4713-90bf-3127c4cf58a7)
