@@ -98,6 +98,8 @@ https://www.quicknode.com/guides/ethereum-development/transactions/how-to-send-a
 https://ethereum.org/en/developers/docs/smart-contracts/deploying/
 https://www.web3.university/tracks/create-a-smart-contract/deploy-your-first-smart-contract
 https://ethereum.stackexchange.com/questions/146895/can-someone-explain-me-providers-and-the-different-types-of-it
+https://cloud.google.com/application/web3/faucet/ethereum/sepolia
+https://www.alchemy.com/blog/goerli-faucet-deprecation
 
 
 
