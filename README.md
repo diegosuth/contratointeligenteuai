@@ -84,22 +84,17 @@ Ahora podemos empezar con la decriptación de nuestro archivo. Escribimos en la 
 Listo, ahora tienes tu llave privada en formato hexadecimal, la cual puedes guardar donde quieras, o usarla como te plazca. En caso de querer verificar la funcionalidad del código este repositorio incluye una llave de ejemplo con contraseña *password123*
 
 ## Apuntes transacciones
-Una transaccion en Ethereum se le dice a la ejecución de un contrato inteligente que realiza algun tipo de acción en la blockchain, como puede ser transferir fondos por ejemplo. Estas se deben realizar a través de la escritura de un código en varios lenguajes que tengan soporte para una libreria web3, pero el mas usado actualmente es JavaScript. En este existen dos librerias famosas para redactar transacciones, la primera siendo web3.js y la segunda ethers.js. En nuestro caso utilizaremos ethers.js para demostrar un ejemplo.
-
-<img width="703" alt="image" src="https://github.com/user-attachments/assets/d5908275-0a03-4389-ae01-b890d3e7fe2c">
+Una transaccion en Ethereum se le dice a la ejecución de un contrato inteligente que realiza algun tipo de acción en la blockchain, como puede ser transferir fondos por ejemplo. Estas se deben realizar a través de la escritura de un código en varios lenguajes que tengan soporte para una libreria web3, pero el mas usado actualmente es JavaScript, específicamente node.js para ejecutar nuestros archivos de transacción. En este existen dos librerias famosas para redactar transacciones, la primera siendo web3.js y la segunda ethers.js. En esta explicación utilizaremos ethers.js.
+Primero debemos instalar node.js, un importante plataforma adyacente a JavaScript que nos ayudará a ejecutar y desplegar nuestros contratos inteligentes. Seguiremos las instrucciones para Windows del sitio oficial de node.js [aquí](https://nodejs.org/en/download/package-manager).
+*Importante* Si es que te aparece algun error relacionado a problemas de ejecucion de script, tienes que abrir PowerShell como administrador y colocar *Set-ExecutionPolicy RemoteSigned*, luego de instalar todo puedes devolverlo a la normalidad escribiendo *Set-ExecutionPolicy Restricted* de la misma forma.
+Una vez instalado node.js, podemos empezar a instalar las dependencias necesarias. Primero instalaremos ethers.js escribiendo en la terminal de windows *npm install ethers.js*. Una vez instalado podremos probar una transacción en una testnet de Ethereum, específicamente Sepolia. Necesitamos primero crear una carpeta en blanco y dentro de esa carpeta crear un archivo .js usando cualquier IDE. Dentro de este archivo podemos copiar el contenido del archivo transaccion.js adjunto a este repositorio. Antes de ejecutarlo, debemos contar con Ether en nuestra dirección, para este ejemplo usaremos un [faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)para depositarnos fondos en Sepolia y poder probar esta transacción.
 
 En este caso para poder enviar la transacción a la blockchain de Ethereum necesitamos de un provider, el cúal nos ayudará con dos tareas:
 -Saber a que blockchain nos estaremos conectando
 -Conectarnos a la la blockchain a través de un nodo completo conectado a la red
-En el ejemplo utilizamos quicknode como provider, pero existen otros como 
+En el ejemplo utilizaremos infura como provider de Sepolia, pero existen provider públicos como Homestead Ethereum.
 
-https://ethereum.org/en/developers/docs/smart-contracts/compiling/
-https://www.quicknode.com/guides/ethereum-development/transactions/how-to-send-a-transaction-in-ethersjs
-https://ethereum.org/en/developers/docs/smart-contracts/deploying/
-https://www.web3.university/tracks/create-a-smart-contract/deploy-your-first-smart-contract
-https://ethereum.stackexchange.com/questions/146895/can-someone-explain-me-providers-and-the-different-types-of-it
-https://cloud.google.com/application/web3/faucet/ethereum/sepolia
-https://www.alchemy.com/blog/goerli-faucet-deprecation
+
 
 
 
