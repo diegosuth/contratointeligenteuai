@@ -101,7 +101,7 @@ En este caso para poder enviar la transacción a la blockchain de Ethereum neces
 En el ejemplo utilizaremos [infura](https://developer.metamask.io/) como provider de Sepolia, pero existen provider públicos como Homestead Ethereum para operar en la mainnet.
 Una vez que tenemos todo listo y reemplazamos el código con nuestros datos, podremos enviar la transacción usando *node transaccion.js* en nuestra terminal abierta en la carpeta donde tenemos nuestro archivo. Si todo sale bien, podremos ingresar a https://sepolia.etherscan.io/ y colocar nuestra dirección pública para ver la transacción recien realizada.
 
-###Transaccion exitosa
+###Transacción exitosa
 ![image](https://github.com/user-attachments/assets/5714d66a-86d9-4f57-9506-a9cf5bf5154e)
 
 
