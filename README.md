@@ -101,8 +101,21 @@ En este caso para poder enviar la transacción a la blockchain de Ethereum neces
 En el ejemplo utilizaremos [infura](https://developer.metamask.io/) como provider de Sepolia, pero existen provider públicos como Homestead Ethereum para operar en la mainnet.
 Una vez que tenemos todo listo y reemplazamos el código con nuestros datos, podremos enviar la transacción usando *node transaccion.js* en nuestra terminal abierta en la carpeta donde tenemos nuestro archivo. Si todo sale bien, podremos ingresar a https://sepolia.etherscan.io/ y colocar nuestra dirección pública para ver la transacción recien realizada.
 
-###Transacción exitosa
+### Transacción exitosa
 ![image](https://github.com/user-attachments/assets/5714d66a-86d9-4f57-9506-a9cf5bf5154e)
+
+## Despliegue de contratos inteligentes
+Para desplegar usaremos Hardhat, una herramienta muy útil para el desarrollo y testeo de contratos inteligentes. Primero debemos instalarlo, y lo que tiene Hardhat de interesante es que cada proyecto que queramos, debemos instalarlo nuevamente, ya que su instalación es por carpeta, a diferencia de programas convencionales que se instalan una vez y quedan listos para usarse repetidas veces. Siguiendo lo anterior, creamos una carpeta en blanco y la abrimos con la terminal. Escribimos *npm init* y presionamos enter hasta que nos pregunte si está todo *ok*, donde escribimos *yes*. Luego en la misma consola escribimos *npm install --save-dev hardhat* y esperamos a que se instale. Ignoramos las vulnerabilidades y el warning respecto a la version de node.js y en la misma terminal escribimos *npx hardhat init*, donde con las flechas seleccionamos *Create an empty hardhat.config.js*. Un paso adicional importante es el de escribir en la terminal *npm install --save-dev @nomicfoundation/hardhat-toolbox* donde instalaremos algunos plug-in que pueden ser útiles luego.
+
+### Instalación de Hardhat paso a paso sacado de su página oficial 
+![image](https://github.com/user-attachments/assets/a7c8aa52-8d16-4d15-9097-9a10bd2f508c)
+
+Para este ejemplo crearemos un contrato de distribución de fondos, donde el objetivo será el de depositar Ether a un contrato, y que este automáticamente distribuya los fondos recbibidos de forma equitativa entre las cuentas que especifiquemos. Siguiendo la instalación de Hardhat, crearemos una carpeta llamada *contracts*. Dentro de esta carpeta colocaremos nuestro contrato escrito en Solidity *.sol* y escribiremos en la misma terminal que estabamos escribiendo antes *npx hardhat compile*.
+
+### Contrato difurcacion.sol escrito en Solidity
+![image](https://github.com/user-attachments/assets/9fe41203-c4ac-4229-a68d-5e4658f9ae2b)
+
+Una vez que nos diga que fue compilado correctamente, podemos seguir con el siguiente paso
 
 
 
