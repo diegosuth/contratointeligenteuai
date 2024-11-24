@@ -89,7 +89,7 @@ Una transaccion en Ethereum se le dice a la ejecución de un contrato inteligent
 Primero debemos instalar node.js, un importante plataforma adyacente a JavaScript que nos ayudará a ejecutar y desplegar nuestros contratos inteligentes. Seguiremos las instrucciones para Windows del sitio oficial de node.js [aquí](https://nodejs.org/en/download/package-manager).
 *Importante* Si es que te aparece algun error relacionado a problemas de ejecucion de script, tienes que abrir PowerShell como administrador y colocar *Set-ExecutionPolicy RemoteSigned*, luego de instalar todo puedes devolverlo a la normalidad escribiendo *Set-ExecutionPolicy Restricted* de la misma forma.
 
-Una vez instalado node.js, podemos empezar a instalar las dependencias necesarias. Primero instalaremos ethers.js escribiendo en la terminal de windows *npm install ethers*. Una vez instalado podremos probar una transacción en una testnet de Ethereum, específicamente Sepolia. Necesitamos primero crear una carpeta en blanco y dentro de esa carpeta crear un archivo .js usando cualquier IDE. Dentro de este archivo podemos copiar el contenido del archivo transaccion.js adjunto a este repositorio. Antes de ejecutarlo, debemos contar con Ether en nuestra dirección, para este ejemplo usaremos un [faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)para depositarnos fondos en Sepolia y poder probar esta transacción.
+Una vez instalado node.js, podemos empezar a instalar las dependencias necesarias. Primero instalaremos ethers.js escribiendo en la terminal de windows *npm install ethers*. Una vez instalado podremos probar una transacción en una testnet de Ethereum, específicamente Sepolia. Necesitamos primero crear una carpeta en blanco y dentro de esa carpeta crear un archivo .js usando cualquier IDE. Dentro de este archivo podemos copiar el contenido del archivo transaccion.js adjunto a este repositorio. Antes de ejecutarlo, debemos contar con Ether en nuestra dirección, para este ejemplo usaremos un [faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia) para depositarnos fondos en Sepolia y poder probar esta transacción.
 
 ### Faucet de Google donde podemos colocar nuestra dirección y recibir Ether
 ![image](https://github.com/user-attachments/assets/7362126f-e24d-4386-842a-f157f73bf9d5)
@@ -101,7 +101,8 @@ En el ejemplo utilizaremos [infura](https://developer.metamask.io/) como provide
 Una vez que tenemos todo listo y reemplazamos el código con nuestros datos, podremos enviar la transacción usando *node transaccion.js* en nuestra terminal abierta en la carpeta donde tenemos nuestro archivo. Si todo sale bien, podremos ingresar a https://sepolia.etherscan.io/ y colocar nuestra dirección pública para ver la transacción recien realizada.
 
 ###Transaccion exitosa
-![image](https://github.com/user-attachments/assets/15c82864-32f0-4007-8a85-56a133d222eb)
+![image](https://github.com/user-attachments/assets/5714d66a-86d9-4f57-9506-a9cf5bf5154e)
+
 
 
 
