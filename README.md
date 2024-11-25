@@ -122,6 +122,9 @@ Una vez que nos diga que fue compilado correctamente, podemos seguir con el sigu
 
 Para ejecutarlo simplemente realizamos una transacción como anteriormente se explicó, pero en este caso cambiamos la dirección y colocamos la del contrato. El contrato tiene la función **receive()**, la cuál permite que al recibir Ether ejecute el código de forma automática(en este caso que los divida y los separe entre las cuentas).
 
+### Ejemplo ejecución contrato
+![image](https://github.com/user-attachments/assets/00855554-1c50-4d58-b76e-74133a18081c)
+
 
 
 
