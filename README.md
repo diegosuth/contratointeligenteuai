@@ -115,13 +115,12 @@ Para este ejemplo crearemos un contrato de distribución de fondos, donde el obj
 ### Contrato difurcacion.sol escrito en Solidity
 ![image](https://github.com/user-attachments/assets/90734ec2-5bb0-4703-b4c7-82d8e35dc194)
 
-
 Una vez que nos diga que fue compilado correctamente, podemos seguir con el siguiente paso, el cual será crear una carpeta nueva en nuestro proyecto llamada *ignition*, y dentro de esta creamos otra carpeta llamada *modules*, esto debido a que así funciona la estructura de Hardhat para la detección automática de archivos. Para nuestro ejemplo crearemos un archivo JavaScript llamado deploy.js en nuestra carpeta recién creada *modules*. Este archivo es importante ya que le estamos dando los argumentos y parámetros a seguir para realizar el despliegue, como por ejemplo los argumentos de *constructor*. Una vez tengamos nuestro archivo listo con las direcciones y parámetros deseados, podemos finalmente desplegarlo en Sepolia usando el comando *npx hardhat run ./ignition/modules/deploy.js --network sepolia* en la terminal de nuestro proyecto. Esto nos dará una dirección que podemos ingresar en Etherscan y ver que nuestro contrato fue desplegado correctamente.
 
 ### Contrato difurcacion.sol desplegado en Sepolia
 ![image](https://github.com/user-attachments/assets/acc6abc8-09a6-4dbc-b74a-231afba233fc)
 
-
+Para ejecutarlo simplemente realizamos una transacción como anteriormente se explicó, pero en este caso cambiamos la dirección y colocamos la del contrato. El contrato tiene la función **receive()**, la cuál permite que al recibir Ether ejecute el código de forma automática(en este caso que los divida y los separe entre las cuentas).
 
 
 
