@@ -124,7 +124,7 @@ Una vez que nos diga que fue compilado correctamente, podemos seguir con el sigu
 ### Contrato difurcacion.sol desplegado en Sepolia
 ![image](https://github.com/user-attachments/assets/acc6abc8-09a6-4dbc-b74a-231afba233fc)
 
-Para ejecutarlo simplemente realizamos una transacción como anteriormente se explicó, pero en este caso cambiamos la dirección y colocamos la del contrato. El contrato tiene la función **receive()**, la cuál permite que al recibir Ether ejecute el código de forma automática(en este caso que los divida y los separe entre las cuentas).
+Para ejecutarlo simplemente realizamos una transacción como anteriormente se explicó, pero en este caso cambiamos la dirección y colocamos la del contrato. El contrato tiene la función **receive()**, la cuál permite que al recibir Ether ejecute el código de forma automática(en este caso que divida lo recibido en partes iguales y que haga una transferencia a cada cuenta).
 
 ### Ejemplo ejecución contrato
 ![image](https://github.com/user-attachments/assets/00855554-1c50-4d58-b76e-74133a18081c)
