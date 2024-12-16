@@ -133,6 +133,7 @@ Para ejecutarlo simplemente realizamos una transacción como anteriormente se ex
 
 Como fue explicado anteriormente,cada vez que realizamos una transacción, desplegamos un contrato o lo ejecutamos, este cuesta gas dependiendo de que tan computacionalmente sea de exigente, ¿Pero cómo sabe el EVM cuánto debería costar cada contrato/transacción? Existe una lista de costes predefinidos por operación, donde el EVM analiza las operaciones que realiza el contrato(como almacenar, crear o transferir) y en base a ello determina un coste de gas. Esta lista se encuentra de forma pública en el [yellowpaper](https://ethereum.github.io/yellowpaper/paper.pdf) de Ethereum. Generalmente la forma de calcular el coste de gas de un contrato es desplegándolo en una testnet, donde se realiza una simulación del coste real que costaría en mainnet. Otras herramientas son [remix.ethereum.org](https://remix.ethereum.org/), donde aparace el costo por función y del contrato real una vez se despliega en una testnet o una virtual machine.
 
+![image](https://github.com/user-attachments/assets/1f0acafc-7a7e-4d85-b425-9313238187cd)
 
 
 
